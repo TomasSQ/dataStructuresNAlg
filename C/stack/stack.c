@@ -12,7 +12,7 @@ Stack newStack() {
 	return stack;
 }
 
-void push(Stack stack, int value) {
+void pushToStack(Stack stack, int value) {
 	Node node = newNode(value);
 
 	stack->size++;
@@ -27,7 +27,7 @@ void push(Stack stack, int value) {
 	stack->first = node;
 }
 
-int pop(Stack stack) {
+int popFromStack(Stack stack) {
 	Node first;
 	int value;
 
@@ -49,7 +49,7 @@ int pop(Stack stack) {
 void pprint_stack(const char* identifier, Stack stack) {
 	Node node;
 
-	printf("Stack %s with %d elements:\n\t", identifier, stack->size);
+	printf("Stack %s with the following %d elements:\n\t", identifier, stack->size);
 
 	node = stack->first;
 	while (node != NULL) {

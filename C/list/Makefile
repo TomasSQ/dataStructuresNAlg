@@ -1,3 +1,3 @@
-MODULE=stack
+MODULE=list
 
 include ../common/Makefile

@@ -10,8 +10,8 @@ typedef struct {
 typedef stack* Stack;
 
 Stack newStack();
-void push(Stack stack, int value);
-int pop(Stack stack);
+void pushToStack(Stack stack, int value);
+int popFromStack(Stack stack);
 void pprint_stack(const char* identifier, Stack stack);
 
 #endif
