@@ -2,8 +2,15 @@
 
 cd stack
 make test
-cd ..
-cd list
-make test
+rm *.x
 cd ..
 
+cd list
+make test
+rm *.x
+cd ..
+
+cd queue
+make test
+rm *.x
+cd ..
